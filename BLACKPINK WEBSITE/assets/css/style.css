@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* set font chữ cho cả hệ thống */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main
+{
+
+}
+
+#header
+{
+    height: 46.500px;
+    /* width: 988.800px; */
+    background-color: #000;
+}
+
+#nav
+{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li {
+    /* inline-block: set up cac thuoc tinh ngang hang */
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a {
+    color: pink;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    /* text-decoration: bỏ gạch chân mặc định ở chữ */
+    text-decoration: none; 
+    line-height: 46.500px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a 
+{
+    color: black;
+    background-color: pink;
+}
+
+#nav li:hover a
+{
+    /* color: black;
+    background-color: pink; */
+}
+
+#nav .subnav{
+    /* display = none là ẩn đi */
+    display: none;
+    min-width: 120px;
+    position: absolute;
+    background-color: rgb(243, 221, 225);
+    box-shadow: 0 0 10px rgb(36, 23, 28);
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 30px;
+}
+
+#header .search-btn
+{
+    float: right;
+}
+
+#header .search-icon
+{
+    color: pink;
+    font-size: 20px;
+}
+/* #nav .subnav li:hover a {
+    color: black;
+    background-color: pink;
+} */
+#slider
+{
+    /* chiều cao tối thiểu */
+    /* min-height: 500px;
+    background-color: #333; */
+}
+
+#content
+{
+
+}
+
+#footer
+{
+
+}
